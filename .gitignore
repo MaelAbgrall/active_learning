@@ -1,0 +1,12 @@
+#env + data
+env*/
+src/result/
+
+#ide
+.vscode/
+
+#python
+__pycache__
+
+#other
+test_*.py
