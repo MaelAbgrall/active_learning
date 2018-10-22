@@ -91,8 +91,8 @@ if(DEBUG == False):
     plt.xlabel('Iterations')
     plt.savefig(path + "loss.png")
 
-    plt.plot(val_loss, label="validation accuracy")
-    plt.plot(loss, label="train accuracy")
+    plt.plot(val_accuracy, label="validation accuracy")
+    plt.plot(accuracy, label="train accuracy")
     plt.title('Accuracy evolution')
     plt.ylabel('Accuracy')
     plt.xlabel('Iterations')
