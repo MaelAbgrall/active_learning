@@ -3,7 +3,11 @@ import time
 
 #import os
 #os.environ["CUDA_VISIBLE_DEVICES"]="3"
+import tensorflow as tf
 
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.45)
+
+sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
 import keras
 
@@ -90,6 +94,7 @@ if(DEBUG == False):
     plt.ylabel('Loss')
     plt.xlabel('Iterations')
     plt.savefig(path + "loss.png")
+    plt.clf()
 
     plt.plot(val_accuracy, label="validation accuracy")
     plt.plot(accuracy, label="train accuracy")

@@ -1,0 +1,16 @@
+2018-10-22 06:23:14.343885: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2 FMA
+2018-10-22 06:23:14.437492: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-10-22 06:23:14.437724: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Quadro P4000 major: 6 minor: 1 memoryClockRate(GHz): 1.48
+pciBusID: 0000:00:05.0
+totalMemory: 7.92GiB freeMemory: 7.69GiB
+2018-10-22 06:23:14.437758: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2018-10-22 06:23:14.702581: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-22 06:23:14.702630: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2018-10-22 06:23:14.702638: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2018-10-22 06:23:14.702845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3651 MB memory) -> physical GPU (device: 0, name: Quadro P4000, pci bus id: 0000:00:05.0, compute capability: 6.1)
+2018-10-22 06:23:17.028140: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2018-10-22 06:23:17.028195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-22 06:23:17.028205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2018-10-22 06:23:17.028211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2018-10-22 06:23:17.028374: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3651 MB memory) -> physical GPU (device: 0, name: Quadro P4000, pci bus id: 0000:00:05.0, compute capability: 6.1)

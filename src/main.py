@@ -3,6 +3,11 @@ import time
 
 #import os
 #os.environ["CUDA_VISIBLE_DEVICES"]="3"
+import tensorflow as tf
+
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.45)
+
+sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
 
 import keras
@@ -23,11 +28,11 @@ DEBUG = False
 
 #query type
 #    least confidence
-query_type = 'LC'
+#query_type = 'LC'
 #    margin sampling
 #query_type = 'MS'
 #    entropy
-#query_type = 'EN'
+query_type = 'EN'
 
 
 #loading our dataset
@@ -66,7 +71,7 @@ size_x = x_train.shape[1]
 size_y = x_train.shape[2]
 input_shape = (size_x, size_y, 1) #grayscale
 number_classes = 10
-step_epoch = 2 #number of epochs for a step TODO TODO
+step_epoch = 20 #number of epochs for a step TODO TODO
 batch_size = 128
 
 #data generator
